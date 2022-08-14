@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+   <style>
+    :root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  .menu {
+    display: flex;
+    justify-content: start;
+    margin-right: 10px;
+  }
+ 
+  
+   ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    display: block;
+    align-items: center;
+    height: 60px;
+    
+  }
+  
+  
+   ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+  }
+   ul li a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+  }
+  .navbar-email {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-right: 10px;
+    margin-top: 20px; ;
+    cursor: pointer;
+    
+  } 
+  .titile{
+    font-size: 25px;
+   margin-top: 20px;
+   }
+   @media (max-width: 640px) {
+    .titile{
+     font-size: 17px;
+    margin-top: 20px;
+    }
+    .navbar-email{
+        display: none;
+    }
+    }
+   
+  
+</style>
+</head>
+<body>
+    <nav>
+        <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+
+        <h1 class="titile">¡Bienvenido a las votaciones!</h1>
+        <ul>
+            <li class="navbar-email">example@example.com</li>
+        </ul>
+    </nav>
+</body>
+</html>
