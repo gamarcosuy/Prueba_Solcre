@@ -1,4 +1,4 @@
-let horas = 12;
+let horas = 0;
 let minutos = 0;
 let segundos = 0;
 
@@ -55,7 +55,7 @@ function verMinutos(segundos){
 function verHoras(segundos,minutos){
     let horasTexto;
 
-    if(segundos == -1 && minutos !== 0 && horas !==0){
+    if(segundos == -1 && minutos == 0 && horas !== 0){
         setTimeout(()=>{
             horas--
         }, 500)
