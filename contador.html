@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+          }
+          body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+          }
+        .title-contador{
+        margin-right: 20px;
+        text-align: center;
+        
+        }
+        .contador-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .contador-container .time-container{
+        margin:0px 4px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .contador-container .time-container div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--very-light-pink);
+            box-shadow: 0px 0px 2px #727272 inset;
+            color: #FFFFFF;
+            font-size: 40px;
+            width: 70px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .contador-container .time-container p{
+            font-size: 11px;
+            font-weight: bold;
+            color: #727272;
+        }
+        .contador-container .espacio{
+            
+            color: #727272;
+            font-size: 40px;
+            margin-top: -0px;
+        }
+        @media (max-width: 535px) {
+           .contador-container{
+            display: block;
+           }
+           .espacio{
+            display: none;
+           }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="title-conatiner--main">
+        <h2 class="title-contador">Las votaciones finalizan en:</h2>
+    </div>
+    <div class="contador-container">
+        
+        <div class="time-container">
+
+            <div class="dias" >00</div>
+            
+            <p>DIAS</p>
+        </div>
+
+        <p class="espacio">:</p>
+
+        <div class="time-container">
+            <div class="horas" >01</div>
+            
+            <p >HORAS</p>
+        </div>
+
+        <p class="espacio">:</p>
+
+        <div class="time-container">
+            <div class="minutos" >01</div>
+            
+            <p>MINUTOS</p>
+        </div>
+
+        <p class="espacio">:</p>
+
+        <div class="time-container">
+            <div class="segundos" >01</div>
+            
+            <p>SEGUNDOS</p>
+        </div>
+    </div>
+    <script src="./contador.js"></script>
+</body>
+</html>
