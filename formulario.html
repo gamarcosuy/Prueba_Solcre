@@ -68,7 +68,8 @@ border-bottom: 1px solid gray;
 }
 .form_section{
     display: inline-block;
-    width: 90%;
+    width: 100%;
+    margin-left: 50px;
 }
 .form_selector{
     color: gray;
@@ -90,7 +91,11 @@ border-bottom: 1px solid gray;
     height: 30px;
 }
 
-
+@media (max-width: 500px) {
+    .form_section{
+        margin-right: 50px;
+    }
+ }
 </style>
 <body>
   <section class="form_section">
