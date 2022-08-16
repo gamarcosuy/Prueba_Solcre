@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <style>
+    :root{
+        --bitcoin-orange:#F7931A;
+        --Soft-orange:#FFE9D5;
+        --Secondary-blue:#1A9AF7;
+        --Soft-blue:#E7F5FF;
+        --warm-black:#201E1C;
+        --black:#282623;
+        --grey:#BABABA;
+        --off-whitr:#FAF8F7;
+        --just-white:#fff;
+        }
     body{
         
         
@@ -15,7 +26,7 @@
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
    
 }
@@ -69,6 +80,7 @@ border-bottom: 1px solid gray;
 .form_section{
     display: inline-block;
     width: 100%;
+    max-height: 250px;
     margin-left: 50px;
 }
 .form_selector{
@@ -96,8 +108,101 @@ border-bottom: 1px solid gray;
         margin-right: 50px;
     }
  }
+ .main_container{
+  display: flex;
+ }
+ .slider{
+    display: flex;
+    max-width: 50%;
+    max-height: 550px;
+    margin-left: 0px;
+    margin-top: 120px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x ;
+    scroll-snap-align: center;
+ }
+ .slider::-webkit-scrollbar{
+    width: 0px;
+    
+ }
+ .card{
+    min-width: 220px;
+    margin-left: 80px;
+    border: solid 2px rgb(162, 156, 156);
+    text-align: center;
+    border-radius: 5px;
+    background-color: #BABABA;
+    
+ }
+ .perfil_imagen{
+    max-width: 80px;
+    border-radius: 50%;
+    margin-top: 5px;
+ }
+ .flechas{
+    max-width: 30px;
+    max-height: 30px;
+    margin-top: 250px;
+    margin-left: 20px;
+ }
+ #left{
+    margin-left: 50px;
+    padding-left: 20px;
+ }
+ .main_container{
+    display: flex;
+   
+ }
+ @media (max-width: 850px) {
+    .main_container{
+        display: block;
+    }
+    .card{
+        
+    }
+    .flechas{
+        display: flex;
+        
+    }
+    .flechasDiv{
+        display: flex;
+        margin-left: 80px;
+        max-height: 400px;
+    }
+ }
+ @media (max-width: 1245px) {
+    .main_container{
+        display: block;
+    }
+    .flechasDiv{
+        display: flex;
+        margin-left: 150px;
+    }
+    .flechas{
+      margin-top: 80px;
+     }
+     .slider{
+        margin-left: 80px;
+     }
+ }
+ @media (max-width: 630px) {
+     .slider{
+        margin-left: 50px;
+        min-width: 320px;
+        
+     }
+     .main_container{
+        width: 100%;
+     }
+     .card{
+        width: 100%;
+     }
+ }
+ 
 </style>
 <body>
+<div class="main_container">
   <section class="form_section">
     <form class="form_container" name="form">
         <div class="form_group">
@@ -124,14 +229,58 @@ border-bottom: 1px solid gray;
           <option value="opcion3">opcion3</option>
           <option value="opcion4">opcion4</option>
           <option value="opcion5">opcion5</option>
+          <option value="opcion5">opcion6</option>
         </select>
         <input type="submit" class="form_submit" value="Votar" >
         </div>
         
     </form>
-    
   </section>
-    
+  
+  <div class="flechasDiv">
+  <img id="left" class="flechas" src="./Assets/left.png" alt="">
+  <img id="right" class="flechas" src="./Assets/08daffe58174d3a035d8c0edf1658410-esquina-redonda-flecha-derecha.png" alt="">
+  </div>
+ <section class="slider">
+        <div class="card">
+         <img class="perfil_imagen" src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" >
+         <h2 class="nombre_card"> Usuario1 </h2>
+         <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+        </div>
+       
+        <div class="card">
+            <img class="perfil_imagen" src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" >
+            <h2 class="nombre_card"> Usuario2 </h2>
+            <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+        </div>
+
+       
+           <div class="card">
+            <img src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" class="perfil_imagen">
+            <h2 class="nombre_card"> Usuario3 </h2>
+            <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+           </div>
+
+           <div class="card">
+            <img src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" class="perfil_imagen">
+            <h2 class="nombre_card"> Usuario4 </h2>
+            <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+           </div>
+           <div class="card">
+            <img src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" class="perfil_imagen">
+            <h2 class="nombre_card"> Usuario5 </h2>
+            <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+           </div>
+           <div class="card">
+            <img src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" class="perfil_imagen">
+            <h2 class="nombre_card"> Usuario6 </h2>
+            <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+           </div>
+           
+           
+    </section>
+   
+</div>
 </body>
 <script src="./formulario.js"></script>
 </html>

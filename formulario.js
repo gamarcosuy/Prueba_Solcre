@@ -46,5 +46,18 @@ function mostrarRespuesta(e){
    
 }
 
+//Scroll
 
+const right = document.getElementById('right');
+const left = document.getElementById('left');
+const slider = document.querySelector('.slider');
+
+right.addEventListener('click', ()=>{
+ slider.scrollLeft += 310; 
+})
+
+left.addEventListener('click', ()=>{
+    slider.scrollLeft -= 310; 
+   })
+   
 
