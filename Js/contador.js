@@ -51,7 +51,7 @@ function verMinutos(segundos){
 
     verHoras(segundos,minutos)
 }
-
+//Horas
 function verHoras(segundos,minutos){
     let horasTexto;
 
@@ -73,3 +73,4 @@ function verHoras(segundos,minutos){
     horasTxt = document.querySelector('.horas')
     horasTxt.innerHTML = horasTexto;
 }
+

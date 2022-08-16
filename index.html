@@ -4,9 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
     <title>Prueba Solcre</title>
 </head>
 <body>
-    
+    <nav>
+        <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+
+        <h1 class="titile">¡Bienvenido a las votaciones!</h1>
+        <ul>
+            <li class="navbar-email">example@example.com</li>
+        </ul>
+        <div class="option-menu none">
+            <ul>
+                <li>
+                 <a href="/" class="title">My vote</a>
+                </li>
+                
+                <li>
+                    <a href="/">My account</a>
+                </li>
+                
+                <li>
+                    <a href="/">@Usuario1</a>
+                </li>
+
+                <li>
+                    <a href="/">Sign out</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="title-conatiner--main">
+        <h2 class="title-contador">Las votaciones finalizan en:</h2>
+    </div>
+    <div class="contador-container">
+        
+        <div class="time-container">
+
+            <div class="dias" >00</div>
+            
+            <p>DIAS</p>
+        </div>
+
+        <p class="espacio">:</p>
+
+        <div class="time-container">
+            <div class="horas" >01</div>
+            
+            <p >HORAS</p>
+        </div>
+
+        <p class="espacio">:</p>
+
+        <div class="time-container">
+            <div class="minutos" >01</div>
+            
+            <p>MINUTOS</p>
+        </div>
+
+        <p class="espacio">:</p>
+
+        <div class="time-container">
+            <div class="segundos" >01</div>
+            
+            <p>SEGUNDOS</p>
+        </div>
+    </div>
+
+<div class="main_container">
+    <section class="form_section">
+        <form class="form_container" name="form">
+
+              <div class="form_group">
+                  <input name="documento" type="number" class="form_input" id="documento" placeholder=" " required>
+                  <label for="documento" class="form_label">Documento:</label>
+                  <span class="form_line"></span>
+              </div>
+
+              <div class="form_group">
+                   <input name="nombre" type="text" class="form_input" id="nombre" placeholder=" " required>
+                   <label for="nombre" class="form_label">Nombre completo:</label>
+                   <span class="form_line"></span>
+              </div>
+
+              <div class="form_group">
+                   <input name="email" type="email" class="form_input" id="email" placeholder=" " required>
+                   <label for="email" class="form_label">Email:</label>
+                   <span class="form_line"></span>
+              </div>
+
+            <div class="form_group">
+                <label for="Postulante" class="form_selector">Selecciona tu voto:</label>
+      
+                <select name="Postulante" id="Postulante" required>
+                    <option value="opcion1">opcion1</option>
+                    <option value="opcion2">opcion2</option>
+                    <option value="opcion3">opcion3</option>
+                    <option value="opcion4">opcion4</option>
+                     <option value="opcion5">opcion5</option>
+                     <option value="opcion5">opcion6</option>
+                </select>
+
+                    <input type="submit" class="form_submit" value="Votar" >
+            </div>
+        </form>
+    </section>
+        
+        <div class="flechasDiv">
+         
+            <img id="left" class="flechas" src="./Assets/left.png" alt="">
+           
+            <img id="right" class="flechas" src="./Assets/08daffe58174d3a035d8c0edf1658410-esquina-redonda-flecha-derecha.png" alt="">
+        
+        </div>
+       <section class="slider">
+            <div class="card">
+               <img class="perfil_imagen" src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" >
+               
+               <h2 class="nombre_card"> Usuario1 </h2>
+               
+               <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+            </div>
+             
+            <div class="card">
+                  <img class="perfil_imagen" src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" >
+                  
+                  <h2 class="nombre_card"> Usuario2 </h2>
+                  
+                  <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+            </div>
+      
+             
+            <div class="card">
+                  
+                <img src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" class="perfil_imagen">
+                 
+                <h2 class="nombre_card"> Usuario3 </h2>
+                  
+                <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+                 </div>
+      
+            <div class="card">
+                     <img src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" class="perfil_imagen">
+                    <h2 class="nombre_card"> Usuario4 </h2>
+                    <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+            </div>
+
+            <div class="card">
+                  <img src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" class="perfil_imagen">
+                  
+                  <h2 class="nombre_card"> Usuario5 </h2>
+                  
+                  <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+            </div>
+
+            <div class="card">
+                  <img src="./Assets/kisspng-computer-icons-clip-art-profile-cliparts-free-5ab5a47b02ff75.0880050915218535630123.jpg" alt="" class="perfil_imagen">
+                  
+                  <h2 class="nombre_card"> Usuario6 </h2>
+                 
+                  <p class="propuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore totam consectetur itaque velit repellat non delectus. Perferendis laboriosam quis accusamus vel magnam quo explicabo eaque voluptatibus ipsa tenetur. Architecto.</p>
+            </div>
+
+</div>   
+              
+    <script src="./Js/main.js"></script>
 </body>
 </html>
